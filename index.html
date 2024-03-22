@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PayTrack</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <button class="header__burger hamburger hamburger--collapse btn-reset" type="button">
+        <span class="hamburger__box">
+          <span class="hamburger__inner">
+          </span>
+        </span>
+      </button>
+      <a href="#" class="logo">PayTrack</a>
+      <nav class="header__nav">
+        <ul class="nav__list list-reset">
+          <li>
+            <a href="#about" class="list__item js-menu-link">О компании</a>
+          </li>
+          <li>
+            <a href="#advantages" class="list__item js-menu-link">Преимущества</a>
+          </li>
+          <li>
+            <a href="#services" class="list__item js-menu-link">Услуги</a>
+          </li>
+          <li>
+            <a href="#reviews" class="list__item js-menu-link">Отзывы</a>
+          </li>
+        </ul>
+        <button onclick="LinkPage('application.html')" class="btn-reset header__btn">
+          Оставить заявку
+        </button>
+      </nav>
+    </div>
+  </header>
+  <div id="hero" class="section hero__section">
+    <div class="container hero__container">
+      <img class="hero__img" src="img/hero_bg.jpg" alt="Фото 1">
+    </div>
+  </div>
+  <section id="about" class="section about__section">
+    <div class="container about__container">
+      <h2 class="title about__title">О компании</h2>
+      <div class="block about__block">
+        <div class="text__block">
+          <p class="desc block__desc">PayTrack&nbsp;&mdash; это разработчик инновационного программного обеспечения для
+            комплексного учета и&nbsp;анализа повременно-премиальной оплаты труда сотрудников предприятий.
+            <br>
+            Наша компания стремится помочь бизнесам всех размеров автоматизировать
+            и&nbsp;усовершенствовать процессы расчета зарплаты, наград и&nbsp;премий, делая их&nbsp;более простыми,
+            понятными и&nbsp;эффективными.
+          </p>
+        </div>
+        <picture>
+          <source srcset="img/about@320.jpg" media="(max-width: 602px)">
+          <img class="about__img" src="img/about_bg.jpg" alt="Фото 2">
+        </picture>
+      </div>
+    </div>
+  </section>
+  <section id="advantages" class="section advantages__section">
+    <div class="container advantages__container">
+      <h2 class="title advantages__title">Наши преимущества</h2>
+      <ul class="advantages__list list-reset">
+        <li class="advantages__item">
+          <div class="advantages__left-side">
+            <p class="advantages__item__text">
+              Специализированное решение
+            </p>
+          </div>
+          <div class="advantages__right-side">
+            <p class="advantages__right__text">
+              Программное средство &laquo;PayTrack&raquo; разработано специально для упрощения и&nbsp;оптимизации
+              процесса расчета повременно-премиальной оплаты труда.
+            </p>
+          </div>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__left-side">
+            <p class="advantages__item__text">
+              Гибкая настройка
+            </p>
+          </div>
+          <div class="advantages__right-side">
+            <p class="advantages__right__text">
+              Возможность настроить систему с&nbsp;учетом уникальных требований и&nbsp;правил конкретного предприятия.
+            </p>
+          </div>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__left-side">
+            <p class="advantages__item__text">
+              Мультипользовательский доступ
+            </p>
+          </div>
+          <div class="advantages__right-side">
+            <p class="advantages__right__text">
+              Обеспечение разграниченного доступа для различных категорий пользователей, от&nbsp;HR-менеджеров
+              до&nbsp;бухгалтерии.
+            </p>
+          </div>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__left-side">
+            <p class="advantages__item__text">
+              Поддержка и&nbsp;обновления
+            </p>
+          </div>
+          <div class="advantages__right-side">
+            <p class="advantages__right__text">
+              Консультационная поддержка и&nbsp;регулярные обновления&nbsp;ПО для соответствия изменяющемуся
+              законодательству и&nbsp;рыночным требованиям.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="section services__section">
+    <div class="container services__container">
+      <h2 id="services" class="title services__title">Наши услуги</h2>
+      <div class="block services__block">
+        <picture>
+          <source srcset="img/services_bg.jpg" media="(max-width: 602px)">
+          <img class="services__img" src="img/services_bg.jpg" alt="Фото 3">
+        </picture>
+        <div class="services__text__block">
+          <p class="desc block__desc">Мы&nbsp;предлагаем автоматизацию расчетов заработной платы на&nbsp;основе
+            отработанного времени и&nbsp;достигнутых результатов. Создание индивидуализированных схем премирования,
+            адаптированных под конкретные KPI и&nbsp;цели компании. А&nbsp;также поддержание актуальности программного
+            средства в&nbsp;соответствии с&nbsp;изменениями в&nbsp;трудовом и&nbsp;налоговом законодательстве.
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="reviews" class="section reviews__section">
+    <div class="container reviews__container">
+      <h2 class="title reviews__title">Отзывы клиентов</h2>
+      <div class="content__block">
+        <div class="block__1">
+          <picture>
+            <source srcset="img/avatar@320_1.png" media="(max-width: 602px)">
+            <img class="avatar__img" src="img/reviews_avatar_1.png" alt="Фото клиента 1">
+          </picture>
+          <div class="avatar__text_content">
+            <h3 class="avatar__title">Владимир А.</h3>
+            <p class="avatar__review">Спасибо компании PayTrack. До&nbsp;сих пор пользуемся ваше программное средство
+            </p>
+          </div>
+        </div>
+        <div class="block__2">
+          <picture>
+            <source srcset="img/avatar@320_2.png" media="(max-width: 602px)">
+            <img class="avatar__img" src="img/reviews_avatar_2.png" alt="Фото клиента 2">
+          </picture>
+          <div class="avatar__text_content">
+            <h3 class="avatar__title">Дарья Л.</h3>
+            <p class="avatar__review">Благодарю компанию за&nbsp;помощь. Уже во&nbsp;второй раз используем ваше ПО
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__content">
+        <div class="footer__up_block">
+          <div class="up_block__section_left">
+            <a href="#" class="footer__logo">paytrack@gmail.com</a>
+          </div>
+          <div class="address-appliction-btn__block">
+            <p class="address">
+              Офис в Москве +7&nbsp;499 503-07-07
+              Берсеневский пер., д.&nbsp;5, cтр.&nbsp;4,
+              3-й эт., Москва, 119072
+            </p>
+            <p class="address">
+              Офис в Казани +7&nbsp;243 541-09-06
+              пл. Тукая, д.&nbsp;47, cтр.&nbsp;5,
+              6-й эт., Казань, 679048
+            </p>
+            <button onclick="LinkPage('application.html')" class="application__btn btn-reset">
+              Заполните заявку
+            </button>
+          </div>
+        </div>
+        <div class="footer__down_block">
+          <div class="down_block__section_left">
+            <span class="copy">©PAYTRACK 2023. Все права защищены</span>
+          </div>
+          <div class="down_block__section_right">
+            <a onclick="LinkPage('FAQ.html')" class="policy">FAQ</a>
+            <a onclick="LinkPage('documents.html')" class="policy">Документы</a>
+            <span class="made">Made by Salahov</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
